@@ -14,12 +14,13 @@
 
         buildInputs = [ ];
 
-        cmakeFlags = [ ];
+        cmakeFlags = [ "-DBUILD_EXAMPLES=OFF" ];
 
-        #        installPhase = ''
-        #          # Use CMake's install target instead of manual copying
-        #          cmake --build . --target install --config Release
-        #        '';
+        installPhase = ''
+          mkdir -p $out
+          cmake --build . --target install --config Release
+          cp -r install/* $out/
+        '';
       };
     in { packages.x86_64-linux.default = orbbecSDK; };
 }

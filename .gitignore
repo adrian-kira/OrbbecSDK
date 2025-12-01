@@ -1,5 +1,6 @@
 # cmake build directory
 build
+result
 
 # cpack output
 packages
