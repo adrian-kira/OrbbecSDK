@@ -1,6 +1,7 @@
 # cmake build directory
 build
 result
+Log
 
 # cpack output
 packages
