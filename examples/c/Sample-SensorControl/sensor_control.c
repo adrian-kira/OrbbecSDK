@@ -87,8 +87,8 @@ int main(int argc, char **argv) {
         int               isSelectProperty   = 1;
         while(isSelectProperty) {
             char str[100] = { 0 };
-            // fgets(str,100, stdin);
-            gets(str);
+            fgets(str,100, stdin);
+            //gets(str);
 
             int  selectId     = 0;
             char setValue[20] = { 0 };

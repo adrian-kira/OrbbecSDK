@@ -14,7 +14,7 @@
 
         buildInputs = [ ];
 
-        cmakeFlags = [ "-DBUILD_EXAMPLES=OFF" ];
+        cmakeFlags = [ ];
 
         installPhase = ''
           mkdir -p $out
