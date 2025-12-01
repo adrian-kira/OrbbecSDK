@@ -84,7 +84,7 @@ int main(int argc, char **argv) try {
     }
 
     // Confirm to upgrade firmware
-    std::cout << "Do you to upgrade firmware: " << firmwareFilePath << std::endl;
+    std::cout << "Do you want to upgrade firmware: " << firmwareFilePath << std::endl;
     std::cout << "Please input Y/N: ";
     while(true) {
         if(kbhit()) {
