@@ -285,7 +285,7 @@ On the Linux/Arm platform ,this sample requires users to compile with Opencv4.2 
 Find and link Orbbec SDK in your CMakeLists.txt file like this:
 
 ```cmake
-cmake_minimum_required(VERSION 3.1.15)
+cmake_minimum_required(VERSION 3.10.0)
 project(OrbbecSDKTest)
 
 add_executable(${PROJECT_NAME} main.cpp)

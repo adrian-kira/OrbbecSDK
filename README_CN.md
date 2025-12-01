@@ -285,7 +285,7 @@ sudo ./OBMultiStream
 在 CMakeLists.txt 文件中查找并链接 Orbbec SDK,例如:
 
 ```cmake
-cmake_minimum_required(VERSION 3.1.15)
+cmake_minimum_required(VERSION 3.10.0)
 project(OrbbecSDKTest)
 
 add_executable(${PROJECT_NAME} main.cpp)

@@ -1,4 +1,4 @@
-cmake_minimum_required(VERSION 3.1.15)
+cmake_minimum_required(VERSION 3.5.0)
 project(OrbbecSDK VERSION 1.10.18 LANGUAGES C CXX)
 
 # Determine host platform
