@@ -41,6 +41,7 @@ if(${CMAKE_SOURCE_DIR} STREQUAL ${CMAKE_CURRENT_SOURCE_DIR})  # project is used 
 
     # Options
     option(BUILD_EXAMPLES "Build examples" ON)
+    option(BUILD_UPDATER "Build firmware updater" ON)
     option(INSTALL_LIBUDEV "Install libudev" OFF)
 
     # Compiler and Linker options
@@ -68,6 +69,9 @@ if(${CMAKE_SOURCE_DIR} STREQUAL ${CMAKE_CURRENT_SOURCE_DIR})  # project is used 
     # Subdirectories
     if (BUILD_EXAMPLES)
         add_subdirectory(examples)
+    endif ()
+    if (BUILD_UPDATER)
+        add_subdirectory(updater)
     endif ()
 
     # Installation of headers, configs, libs
